@@ -74,7 +74,7 @@ const Home = () => {
               alt="computer"
             />
           </div>
-          <span className="text-white text-xs text-center">Prasun</span>
+          <span className="font-light text-white text-sm text-center">Prasun</span>
         </div>
 
         {/* Windows 95 Popup */}

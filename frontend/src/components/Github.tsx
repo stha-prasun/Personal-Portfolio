@@ -11,7 +11,7 @@ const Github = () => {
       <div className="w-16 h-16 -mb-2 flex items-center justify-center">
         <img className="w-16 h-16" src="/Icons/web.png" alt="computer" />
       </div>
-      <span className="text-white text-xs text-center">Github</span>
+      <span className="font-light text-white text-sm text-center">Github</span>
     </a>
   );
 };
