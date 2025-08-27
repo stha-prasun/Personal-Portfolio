@@ -88,7 +88,7 @@ const Home = () => {
                       '"MS Sans Serif", Tahoma, Geneva, Verdana, sans-serif',
                   }}
                 >
-                  About Me
+                  Prasun
                 </span>
                 <div className="flex gap-1">
                   <button
