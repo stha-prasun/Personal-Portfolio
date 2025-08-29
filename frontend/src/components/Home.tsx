@@ -3,11 +3,36 @@ import { Code, User, Star, GraduationCap, Mail } from "lucide-react";
 import Start from "./Start";
 import Github from "./Github";
 import Home_cmd from "./Home_cmd";
+import toast from "react-hot-toast";
 
 const Home = () => {
   const [currentTime, setCurrentTime] = useState("");
   const [showStartMenu, setShowStartMenu] = useState(false);
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    toast.custom(
+      (t) => (
+        <div
+          className={`${
+            t.visible ? "animate-enter" : "animate-leave"
+          } bg-[#C0C0C0] border-t-2 border-l-2 border-b-2 border-r-2 border-black shadow-[4px_4px_0_#808080] px-4 py-2 text-black text-sm flex justify-between items-center w-80`}
+        >
+          <span>Welcome to your Windows 95 Desktop, Prasun!</span>
+          <button
+            onClick={() => toast.dismiss(t.id)}
+            className="bg-[#C0C0C0] border-t-2 border-l-2 border-b-2 border-r-2 border-black w-5 h-5 flex items-center justify-center text-[10px] font-bold active:translate-x-[1px] active:translate-y-[1px]"
+          >
+            ✕
+          </button>
+        </div>
+      ),
+      {
+        duration: 3000,
+        position: "top-right",
+      }
+    );
+  }, []);
 
   // Update clock
   useEffect(() => {
