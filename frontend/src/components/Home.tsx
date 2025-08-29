@@ -4,11 +4,13 @@ import Start from "./Start";
 import Github from "./Github";
 import Home_cmd from "./Home_cmd";
 import toast from "react-hot-toast";
+import { useJarvisSpeech } from "./JarvisSpeech";
 
 const Home = () => {
   const [currentTime, setCurrentTime] = useState("");
   const [showStartMenu, setShowStartMenu] = useState(false);
   const [open, setOpen] = useState(false);
+  const [jarvisActive, setJarvisActive] = useState(false);
 
   useEffect(() => {
     toast.custom(
@@ -73,6 +75,8 @@ const Home = () => {
   const toggleStartMenu = () => {
     setShowStartMenu(!showStartMenu);
   };
+
+  useJarvisSpeech(jarvisActive);
 
   return (
     <div
@@ -277,6 +281,23 @@ const Home = () => {
 
         {/* CMD Icon */}
         <Home_cmd />
+
+        {/* Jarvis Icon */}
+        <div
+          className="flex flex-col items-center w-16 cursor-pointer select-none"
+          onClick={() => setJarvisActive(true)}
+        >
+          <div className="w-16 h-16 -mb-2 flex items-center justify-center">
+            <img
+              className="w-16 h-16"
+              src="/Icons/jarvis.png"
+              alt="jarvis"
+            />
+          </div>
+          <span className="font-light text-white text-sm text-center">
+            Jarvis
+          </span>
+        </div>
       </div>
 
       {/* Taskbar */}
