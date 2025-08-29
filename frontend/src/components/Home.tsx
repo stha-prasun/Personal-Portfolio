@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Code, User, Star, GraduationCap, Mail } from "lucide-react";
 import Start from "./Start";
 import Github from "./Github";
+import Home_cmd from "./Home_cmd";
 
 const Home = () => {
   const [currentTime, setCurrentTime] = useState("");
@@ -248,6 +249,9 @@ const Home = () => {
         )}
 
         <Github />
+
+        {/* CMD Icon */}
+        <Home_cmd />
       </div>
 
       {/* Taskbar */}
