@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Code, User, Star } from "lucide-react";
+import { Code, User, Star, GraduationCap, Mail } from "lucide-react";
 import Start from "./Start";
 import Github from "./Github";
 
@@ -74,7 +74,9 @@ const Home = () => {
               alt="computer"
             />
           </div>
-          <span className="font-light text-white text-sm text-center">Prasun</span>
+          <span className="font-light text-white text-sm text-center">
+            Prasun
+          </span>
         </div>
 
         {/* Windows 95 Popup */}
@@ -90,7 +92,7 @@ const Home = () => {
                       '"MS Sans Serif", Tahoma, Geneva, Verdana, sans-serif',
                   }}
                 >
-                  Prasun
+                  Prasun.exe
                 </span>
                 <div className="flex gap-1">
                   <button
@@ -117,10 +119,21 @@ const Home = () => {
                 <div className="flex items-start gap-2">
                   <Code size={16} className="mt-[2px]" />
                   <div className="text-[13px]">
-                    <p className="font-bold">Skills:</p>
+                    <p className="font-bold mb-1">Skills:</p>
                     <p>
-                      React, Node.js, Express, MongoDB, Tailwind CSS,
-                      JavaScript, TypeScript
+                      <span className="underline">Frontend:</span> React, React
+                      Router, Tailwind, CSS, HTML, JavaScript, TypeScript
+                    </p>
+                    <p>
+                      <span className="underline">Backend:</span> Node,
+                      Express.js, MongoDB, JWT, Socket.io
+                    </p>
+                    <p>
+                      <span className="underline">State Management:</span> Redux
+                    </p>
+                    <p>
+                      <span className="underline">Tools & Deployment:</span>{" "}
+                      GitHub, Git, Vercel, Postman
                     </p>
                   </div>
                 </div>
@@ -135,6 +148,99 @@ const Home = () => {
                       the MERN stack.
                     </p>
                   </div>
+                </div>
+
+                {/* Education Section */}
+                <div className="flex items-start gap-2">
+                  <GraduationCap size={16} className="mt-[2px]" />
+                  <div className="text-[13px]">
+                    <p className="font-bold">Education:</p>
+                    <p>BSc (Hons) Computing (Islington College)</p>
+                  </div>
+                </div>
+
+                {/* Email Section */}
+                <div className="flex items-start gap-2">
+                  <Mail size={16} className="mt-[2px]" />
+                  <div className="text-[13px]">
+                    <p className="font-bold">Email:</p>
+                    <p>
+                      <a
+                        href="mailto:shresthaprasun88@gmail.com"
+                        className="underline text-blue-700"
+                      >
+                        shresthaprasun88@gmail.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Badges */}
+                <div className="flex flex-wrap gap-2">
+                  <img
+                    src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
+                    alt="Node.js"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="JavaScript"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"
+                    alt="TypeScript"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
+                    alt="Vercel"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="Tailwind CSS"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"
+                    alt="Express.js"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"
+                    alt="JWT"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"
+                    alt="Redux"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white"
+                    alt="Socket.io"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"
+                    alt="React Router"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                    alt="React"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
+                    alt="MongoDB"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
+                    alt="Postman"
+                  />
+                  <img
+                    src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"
+                    alt="GitHub"
+                  />
                 </div>
               </div>
             </div>
