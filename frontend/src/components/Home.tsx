@@ -5,6 +5,7 @@ import Github from "./Github";
 import Home_cmd from "./Home_cmd";
 import toast from "react-hot-toast";
 import { useJarvisSpeech } from "./JarvisSpeech";
+import JarvisInstructions from "./JarvisInstructions";
 
 const Home = () => {
   const [currentTime, setCurrentTime] = useState("");
@@ -282,17 +283,15 @@ const Home = () => {
         {/* CMD Icon */}
         <Home_cmd />
 
+        <JarvisInstructions />
+
         {/* Jarvis Icon */}
         <div
           className="flex flex-col items-center w-16 cursor-pointer select-none"
           onClick={() => setJarvisActive(true)}
         >
           <div className="w-16 h-16 -mb-2 flex items-center justify-center">
-            <img
-              className="w-16 h-16"
-              src="/Icons/jarvis.png"
-              alt="jarvis"
-            />
+            <img className="w-16 h-16" src="/Icons/jarvis.png" alt="jarvis" />
           </div>
           <span className="font-light text-white text-sm text-center">
             Jarvis
