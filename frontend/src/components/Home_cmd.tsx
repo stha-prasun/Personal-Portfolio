@@ -15,7 +15,7 @@ const Home_cmd = () => {
         <div className="w-16 h-16 -mb-2 flex items-center justify-center">
           <img className="w-16 h-16" src="/Icons/ms_dos.png" alt="cmd" />
         </div>
-        <span className="font-light text-white text-sm text-center">CMD</span>
+        <span className="font-light text-white text-sm text-center">MS-DOS</span>
       </div>
 
       {openCmd && (

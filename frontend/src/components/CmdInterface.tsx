@@ -2,16 +2,21 @@ import { useState } from "react";
 
 const CmdInterface = () => {
   const initialHistory = [
-    "help | about | skills | contact | education | clear",
+    "help | about | skills | contact | education | resume | clear",
   ];
   const [input, setInput] = useState("");
   const [history, setHistory] = useState<string[]>(initialHistory);
+
+  // Function to open resume in new tab
+  const openResume = () => {
+    window.open("/resume.pdf", "_blank");
+  };
 
   // Function to process commands
   const processCommand = (command: string): string | "clear" => {
     switch (command) {
       case "help":
-        return "Available commands: help, about, skills, contact, education, clear";
+        return "Available commands: help, about, skills, contact, education, resume, clear";
       case "about":
         return "Hi, I'm Prasun Shrestha, a MERN Stack Developer.";
       case "skills":
@@ -20,6 +25,20 @@ const CmdInterface = () => {
         return "You can contact me at: shresthaprasun88@gmail.com";
       case "education":
         return "Education: BSc (Hons) Computing";
+      case "resume":
+        setTimeout(() => {
+          openResume();
+        }, 2000);
+        return `
+██████╗ ██████╗  █████╗ ███████╗██╗   ██╗███╗   ██╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝██║   ██║████╗  ██║
+██████╔╝██████╔╝███████║███████╗██║   ██║██╔██╗ ██║
+██╔═══╝ ██╔══██╗██╔══██║╚════██║██║   ██║██║╚██╗██║
+██║     ██║  ██║██║  ██║███████║╚██████╔╝██║ ╚████║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝
+
+Opening resume in a new tab...
+`;
       case "clear":
         return "clear";
       default:
@@ -49,9 +68,11 @@ const CmdInterface = () => {
       <div className="flex flex-col gap-1">
         {history.map((line, index) => (
           <div key={index}>
-            {line.split("\n").map((text, i) => (
-              <div key={i}>{text}</div>
-            ))}
+            {line.includes("████") ? (
+              <pre className="whitespace-pre leading-snug">{line}</pre>
+            ) : (
+              line.split("\n").map((text, i) => <div key={i}>{text}</div>)
+            )}
           </div>
         ))}
         <div className="flex">
