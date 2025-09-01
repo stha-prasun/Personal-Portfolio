@@ -14,7 +14,7 @@ It showcases my projects, skills, and personality in a fun, nostalgic way — co
 - **Toasts** – Custom Windows 95–style notifications.  
 - **Start Menu Options**:  
   - **Instagram** → Quick link to my profile.  
-  - **Surprise** → Unlocks Mjolnir cursor effect ⚡.  
+  - **Surprise** → Unlocks Mjolnir cursor effect.  
   - **Shut Down** → Simulates Windows shutdown with a full-screen message.  
 
 ---
@@ -35,13 +35,13 @@ It showcases my projects, skills, and personality in a fun, nostalgic way — co
 
 ---
 
-## 🌐 Live Demo  
+## Live Demo  
 
 🔗 [Visit Portfolio](https://prasun-shrestha.vercel.app/)  
 
 ---
 
-## 📧 Contact  
+## Contact  
 
 - **Email**: [shresthaprasun88@gmail.com](mailto:shresthaprasun88@gmail.com)  
 - **Instagram**: [@stha.prasun](https://www.instagram.com/stha.prasun)  
